@@ -11,19 +11,14 @@ function Pizza(toppings, size) {
 
 Pizza.prototype.displayPrice = function () {
   if (this.size === 1){
-    this.price = 6.00;
-    alert('hi');
-  /*} else if (this.size === 2){
-    this.price = 10.00;
-  } else {this.price = 14.00;
-  }*/
+    this.price = 8.00;
+  }else{
+    this.price = 5.00;
+  }
 }
 
 Pizza.prototype.displayPizza = function () {
 //print all var here?//
-var toppings = this.toppings;
-var size = this.size;
-var price = this.price;
 //concat/join all properties//
 }
 
@@ -40,8 +35,8 @@ $(document).ready(function(){
   $("#pizzaParlour").submit(function(event){
     event.preventDefault();
 
-    var toppings = parseInt($("#pizzaToppings").val());
-    var size = parseInt($("#pizzaSize").val());
+    var toppings = parseInt($("#toppings").val());
+    var size = parseInt($("#size").val());
     /*var time = parseInt($("#pizzaTime").val());*/
 
     var pizza = new Pizza(toppings, size);
@@ -53,7 +48,7 @@ $(document).ready(function(){
 
     //remember to display on html side//
 
-  })
+  });
 
 
 });

@@ -1,6 +1,6 @@
 //business logic for Pizza
 //1 constructor
-//2 objects of constructor (toppings,size ?time?)
+//2 objects of constructor (toppings,size ?time? )
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;

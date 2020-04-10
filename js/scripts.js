@@ -18,8 +18,16 @@ function Pizza(toppings, size) {
 
 //UI Logic
 $(document).ready(function(){
-  $().submit(function(event){
+  $("#pizzaParlour").submit(function(event){
     event.preventDefault();
+
+    var toppings = parseInt($("#pizzaToppings").val());
+    var size = parseInt($("#pizzaSize").val());
+    var time = parseInt($("#pizzaTime").val());
+
+    console.log(toppings);
+    console.log(size);
+    console.log(time);
 
   })
 

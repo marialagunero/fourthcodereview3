@@ -1,15 +1,16 @@
 //business logic for Pizza
 //1 constructor
-//2 objects of constructor (toppings,size ?time? )
+//2 properties of constructor (toppings,size, -?time? )
 function Pizza(toppings, size) {
-  this.toppings = toppings;
-  this.size = size;
+  /*properties*/this.toppings = toppings;
+  /*properrties*/this.size = size;
+  /*?time?*/this.time = time;
 
 }
 
 
 
-//3 properties toppings(bacon,peppers,etc), size(s,m,l), cost(6,10,14),?ticket and disply?
+//3 toppings(bacon,peppers,etc), size(s,m,l), cost(2 costs),?ticket and disply?
 //4 create prototypes to display "receipt" of pizza made.
 
 

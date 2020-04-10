@@ -29,7 +29,7 @@ var size = this.size;
 var price = this.price;
 var time = this.time;
 //concat/join all properties//
-$("#showPizza").html("<p> Toppings: " + toppings + "Size: " + size + "Time" + time + "Price: " + price + "</p>");
+$("#showPizza").html("<p> Toppings: " + toppings + "Size: " + size + "Time:" + time + "Price: " + price + "</p>");
 $("#showPizza").show();
 }
 

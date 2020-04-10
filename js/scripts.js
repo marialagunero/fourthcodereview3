@@ -19,13 +19,13 @@ Pizza.prototype.displayPrice = function () {
   }
 }
 
-Pizza.prototype.displayPizza = function () {
+Pizza.prototype.displayPizzaReceipt = function () {
 //print all var here?//
-var toppings = toppings;
-var size = size;
+var toppings = this.toppings;
+var size = this.size;
 var price = this.price;
 //concat/join all properties//
-$("#showPizza").html("<p> Toppings" + toppings + "Size" + size + "Price:" + price + "</p>");
+$("#showPizza").html("<p> Toppings: " + toppings + "Size: " + size + "Price: " + price + "</p>");
 $("#showPizza").show();
 }
 
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
     //remember to display on html side//
     pizza.displayPrice();
-    pizza.displayPizza();
+    pizza.displayPizzaReceipt();
 
   });
 

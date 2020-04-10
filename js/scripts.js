@@ -13,9 +13,12 @@ Pizza.prototype.displayPrice = function () {
   if (this.size === 1){
     this.price = 6.00;
   }else if (this.size === 2){
-    this.price = 10.00; 
+    this.price = 12.00; 
   }else {
     this.price = 14.00;
+  }
+  if (this.time === 1) {
+    this.price = this.price * 0.75;
   }
 }
 

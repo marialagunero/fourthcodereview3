@@ -1,10 +1,16 @@
-//business logic
+//business logic for Pizza
 //1 constructor
-function Pizza()
-//2properties of constructor
-toppings, size
-//3objects toppings, size, cost,?ticket and disply?
-//4create prototypes to display "receipt" of pizza made.
+//2 objects of constructor (toppings,size ?time?)
+function Pizza(toppings, size) {
+  this.toppings = toppings;
+  this.size = size;
+
+}
+
+
+
+//3 properties toppings(bacon,peppers,etc), size(s,m,l), cost(6,10,14),?ticket and disply?
+//4 create prototypes to display "receipt" of pizza made.
 
 
 

@@ -1,10 +1,10 @@
 //business logic
 //1 constructor Pizza
-//2 properties of constructor (toppings,size, -?time? )
-function Pizza(toppings, size) {
+//2 properties of constructor (toppings,size,time )
+function Pizza(toppings, size, time) {
   /*properties*/this.toppings = toppings;
   /*properties*/this.size = size;
-  /*?time?this.time = time;*/
+  /*properties*/this.time = time;
   /*properties*/this.price = 0;
 
 }
@@ -19,13 +19,14 @@ Pizza.prototype.displayPrice = function () {
   }
 }
 
-Pizza.prototype.displayPizzaReceipt = function () {
+Pizza.prototype.displayPizzaTicket = function () {
 //print all var here?//
 var toppings = this.toppings;
 var size = this.size;
 var price = this.price;
+var time = this.time;
 //concat/join all properties//
-$("#showPizza").html("<p> Toppings: " + toppings + "Size: " + size + "Price: " + price + "</p>");
+$("#showPizza").html("<p> Toppings: " + toppings + "Size: " + size + "Time" + time + "Price: " + price + "</p>");
 $("#showPizza").show();
 }
 
@@ -44,18 +45,18 @@ $(document).ready(function(){
 
     var toppings = parseInt($("#toppings").val());
     var size = parseInt($("#size").val());
-    /*var time = parseInt($("#pizzaTime").val());*/
+    var time = parseInt($("#pizzaTime").val());
 
-    var pizza = new Pizza(toppings, size);
+    var pizza = new Pizza(toppings, size, time);
 
     console.log(toppings);
     console.log(size);
-    //console.log(time);
+    console.log(time);
     console.log(pizza);
 
     //remember to display on html side//
     pizza.displayPrice();
-    pizza.displayPizzaReceipt();
+    pizza.displayPizzaTicket();
 
   });
 
